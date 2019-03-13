@@ -1,6 +1,6 @@
 # www_bettertoken.com
 
-The 2.0 version of the [bettertoken webshop](https://www.bettertoken.shop)
+The 1.1 version of the [bettertoken webshop](https://www.bettertoken.shop)
 
 
 
