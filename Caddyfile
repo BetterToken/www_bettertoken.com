@@ -5,7 +5,7 @@
     
     git {
         repo git@github.com:BetterToken/www_bettertoken.com.git
-        branch master
+        branch production
         hook /webhook "zU3687$aJEb6"
         key ~/.ssh/id_rsa
         path . 
