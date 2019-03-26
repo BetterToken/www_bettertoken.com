@@ -35,12 +35,10 @@
     "versionFirst": "4.9.3",
     "siteFonts": [],
     "uniqCompNum": 3,
-    "versionPublish": "4.9.5",
+    "versionPublish": "4.9.6",
     "screenshot": "screenshot.png",
     "favicon": "",
-    "noImageResize": "",
-    "publishType": "local",
-    "publishPath": "file:///Users/adnanfatayerji/Desktop/Websites/www_bettertoken.com"
+    "noImageResize": ""
   },
   "pages": {
     "index.html": {
