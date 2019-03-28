@@ -1382,6 +1382,17 @@ body {
     flex: auto!important;
   }
 }
+.jq-selectbox li:hover,
+.jq-selectbox li.selected {
+  background-color: #19b391;
+  color: #000000;
+}
+.jq-selectbox .jq-selectbox__trigger-arrow {
+  border-top-color: contrast(currentColor, #000000, #ffffff, 30%);
+}
+.jq-selectbox:hover .jq-selectbox__trigger-arrow {
+  border-top-color: #19b391;
+}
 .cid-rk1zyiDAUr .navbar {
   background: #ffffff;
   transition: none;
@@ -1889,8 +1900,8 @@ body {
   text-align: left;
 }
 .cid-rk1Rgruzef {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 45px;
+  padding-bottom: 0px;
   background-color: #232323;
 }
 @media (max-width: 767px) {
