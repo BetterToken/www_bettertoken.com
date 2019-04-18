@@ -4,7 +4,7 @@
     root .
     
     git {
-        repo ssh://git@github.com:BetterToken/www_bettertoken.com.git
+        repo https://github.com/BetterToken/www_bettertoken.com.git
         branch production
         hook /webhook "zU3687$aJEb6"
         key ~/.ssh/id_rsa
