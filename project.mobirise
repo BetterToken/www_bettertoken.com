@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Bettertoken V2",
-    "currentPage": "order-form.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "commercem4",
       "title": "CommerceM4",
@@ -49,8 +49,8 @@
     "favicon": "@PROJECT_PATH@/assets/images/plant-only-dark-128x128.png",
     "noImageResize": "",
     "google-analytics": "",
-    "uniqCompNum": 115,
-    "versionPublish": "4.10.4",
+    "uniqCompNum": 114,
+    "versionPublish": "4.10.6",
     "screenshot": "screenshot.png",
     "gdpr": "",
     "customCookies": {
