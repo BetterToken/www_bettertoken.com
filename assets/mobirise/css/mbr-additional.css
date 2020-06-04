@@ -742,6 +742,7 @@ section.lazy-placeholder:after {
   justify-content: flex-end;
   z-index: 1;
   -webkit-justify-content: flex-end;
+  display: none !important;
 }
 .cid-rYNqqXbDm3 .navbar.collapsed .nav-item .nav-link::before {
   display: none;
@@ -751,7 +752,7 @@ section.lazy-placeholder:after {
 }
 @media (min-width: 992px) {
   .cid-rYNqqXbDm3 .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
-    max-height: calc(99vh - 5.4rem);
+    max-height: calc(99vh - 4.1rem);
   }
 }
 .cid-rYNqqXbDm3 .navbar.collapsed .dropdown-menu {
@@ -1459,6 +1460,7 @@ section.lazy-placeholder:after {
   justify-content: flex-end;
   z-index: 1;
   -webkit-justify-content: flex-end;
+  display: none !important;
 }
 .cid-rYNqqXbDm3 .navbar.collapsed .nav-item .nav-link::before {
   display: none;
@@ -1468,7 +1470,7 @@ section.lazy-placeholder:after {
 }
 @media (min-width: 992px) {
   .cid-rYNqqXbDm3 .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
-    max-height: calc(99vh - 5.4rem);
+    max-height: calc(99vh - 4.1rem);
   }
 }
 .cid-rYNqqXbDm3 .navbar.collapsed .dropdown-menu {
@@ -2002,6 +2004,7 @@ section.lazy-placeholder:after {
   justify-content: flex-end;
   z-index: 1;
   -webkit-justify-content: flex-end;
+  display: none !important;
 }
 .cid-rYNqqXbDm3 .navbar.collapsed .nav-item .nav-link::before {
   display: none;
@@ -2011,7 +2014,7 @@ section.lazy-placeholder:after {
 }
 @media (min-width: 992px) {
   .cid-rYNqqXbDm3 .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
-    max-height: calc(99vh - 5.4rem);
+    max-height: calc(99vh - 4.1rem);
   }
 }
 .cid-rYNqqXbDm3 .navbar.collapsed .dropdown-menu {
@@ -2546,6 +2549,7 @@ section.lazy-placeholder:after {
   justify-content: flex-end;
   z-index: 1;
   -webkit-justify-content: flex-end;
+  display: none !important;
 }
 .cid-rYNqqXbDm3 .navbar.collapsed .nav-item .nav-link::before {
   display: none;
@@ -2555,7 +2559,7 @@ section.lazy-placeholder:after {
 }
 @media (min-width: 992px) {
   .cid-rYNqqXbDm3 .navbar.collapsed.opened:not(.navbar-short) .navbar-collapse {
-    max-height: calc(99vh - 5.4rem);
+    max-height: calc(99vh - 4.1rem);
   }
 }
 .cid-rYNqqXbDm3 .navbar.collapsed .dropdown-menu {
