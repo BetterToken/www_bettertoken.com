@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Bettertoken V2",
-    "currentPage": "index.html",
+    "currentPage": "use-tft.html",
     "theme": {
       "name": "commercem4",
       "title": "CommerceM4",
@@ -63,7 +63,7 @@
     "uniqCompNum": 198,
     "versionPublish": "4.12.3",
     "screenshot": "screenshot.png",
-    "gdpr": "",
+    "gdpr": false,
     "cookiesAlert": {
       "colorText": "#424a4d",
       "colorBg": "#eaeff1",
@@ -85,7 +85,11 @@
       "checkoutButton": "Check out with",
       "email": "peter@bettertoken.com"
     },
-    "imageResize": true
+    "imageResize": true,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false
   },
   "pages": {
     "index.html": {
@@ -93,7 +97,7 @@
         "main": true,
         "title": "Home",
         "meta_descr": "",
-        "header_custom": "",
+        "header_custom": "<script type=\"text/javascript\">window.$crisp=[];window.CRISP_WEBSITE_ID=\"1a5a5241-91cb-4a41-8323-5ba5ec574da0\";(function(){d=document;s=d.createElement(\"script\");s.src=\"https://client.crisp.chat/l.js\";s.async=1;d.getElementsByTagName(\"head\")[0].appendChild(s);})();</script>\n",
         "footer_custom": "",
         "html_before": ""
       },
@@ -1219,7 +1223,8 @@
     "use-tft.html": {
       "settings": {
         "title": "Token Usage",
-        "order": 4
+        "order": 4,
+        "header_custom": "<script type=\"text/javascript\">window.$crisp=[];window.CRISP_WEBSITE_ID=\"1a5a5241-91cb-4a41-8323-5ba5ec574da0\";(function(){d=document;s=d.createElement(\"script\");s.src=\"https://client.crisp.chat/l.js\";s.async=1;d.getElementsByTagName(\"head\")[0].appendChild(s);})();</script>\n"
       },
       "components": [
         {
@@ -1800,7 +1805,8 @@
     "developer.html": {
       "settings": {
         "title": "Developer",
-        "order": 1
+        "order": 1,
+        "header_custom": "<script type=\"text/javascript\">window.$crisp=[];window.CRISP_WEBSITE_ID=\"1a5a5241-91cb-4a41-8323-5ba5ec574da0\";(function(){d=document;s=d.createElement(\"script\");s.src=\"https://client.crisp.chat/l.js\";s.async=1;d.getElementsByTagName(\"head\")[0].appendChild(s);})();</script>\n"
       },
       "components": [
         {
@@ -2663,7 +2669,8 @@
     "end-user.html": {
       "settings": {
         "title": "End User",
-        "order": 3
+        "order": 3,
+        "header_custom": "<script type=\"text/javascript\">window.$crisp=[];window.CRISP_WEBSITE_ID=\"1a5a5241-91cb-4a41-8323-5ba5ec574da0\";(function(){d=document;s=d.createElement(\"script\");s.src=\"https://client.crisp.chat/l.js\";s.async=1;d.getElementsByTagName(\"head\")[0].appendChild(s);})();</script>\n"
       },
       "components": [
         {
@@ -3391,7 +3398,8 @@
       "settings": {
         "title": "Deploy On Demand",
         "order": 2,
-        "meta_descr": ""
+        "meta_descr": "",
+        "header_custom": "<script type=\"text/javascript\">window.$crisp=[];window.CRISP_WEBSITE_ID=\"1a5a5241-91cb-4a41-8323-5ba5ec574da0\";(function(){d=document;s=d.createElement(\"script\");s.src=\"https://client.crisp.chat/l.js\";s.async=1;d.getElementsByTagName(\"head\")[0].appendChild(s);})();</script>\n"
       },
       "components": [
         {
