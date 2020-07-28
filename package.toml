@@ -1,0 +1,5 @@
+[source]
+name = "www_bettertoken_com"
+description = "bettertoken website"
+threebot = "threefold"
+version = "1.0.0"
