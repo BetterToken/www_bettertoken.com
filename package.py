@@ -7,7 +7,7 @@ class Package(j.baseclasses.threebot_package):
     JSX> cl = j.clients.gedis.get("abc", port=8901, package_name="zerobot.packagemanager")
     JSX> cl.actors.package_manager.package_add(git_url="https://github.com/BetterToken/www_bettertoken.com/tree/master")
     """
-    DOMAIN = "www.bettertoken.com"
+    DOMAIN = "bettertoken.com"
     name = "www_bettertoken_com"
     def start(self):
         server = self.openresty
