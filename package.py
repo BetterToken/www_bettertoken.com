@@ -1,53 +1,31 @@
+
 from Jumpscale import j
+
 
 class Package(j.baseclasses.threebot_package):
     """
-    to start need to run 
-    kosmos -p "j.tools.threebot_packages.get('bettertoken',giturl='https://github.com/BetterToken/www_bettertoken.com.git',branch='development')"
-    kosmos -p "j.servers.threebot.default.start(web=True, ssl=False)"
+    JSX> cl = j.servers.threebot.local_start_zerobot(background=False)
+    JSX> cl = j.clients.gedis.get("abc", port=8901, package_name="zerobot.packagemanager")
+    JSX> cl.actors.package_manager.package_add(git_url="https://github.com/BetterToken/www_bettertoken.com/tree/development")
     """
-    def _init(self, **kwargs):
-        self.branch = kwargs["package"].branch or "development"
-        self.bettertoken = "https://github.com/BetterToken/www_bettertoken.com.git"
-
-    def prepare(self):
-        """
-        called when the 3bot starts
-        :return:
-        """
-        server = self.openresty
-        server.install(reset=True)
-        server.configure()
-        website = server.websites.get("bettertoken")
-        website.ssl = False
-        website.port = 80
-        locations = website.locations.get("bettertoken")
-        static_location = locations.locations_static.new()
-        static_location.name = "static"
-        static_location.path_url = "/"
-        path = j.clients.git.getContentPathFromURLorPath(self.bettertoken, branch=self.branch, pull=True)
-        static_location.path_location = path
-        static_location.use_jumpscale_weblibs = True
-        website.path = path
-        locations.configure()
-        website.configure()
-
+    DOMAIN = "www2.bettertoken.com"
+    name = "www2_bettertoken_com"
     def start(self):
-        """
-        called when the 3bot starts
-        :return:
-        """
-        self.prepare()
-    def stop(self):
-        """
-        called when the 3bot stops
-        :return:
-        """
-        pass
+        server = self.openresty
+        server.configure()
+      
+        for port in (80, 443):
+            website = server.websites.get(f"bettertoken_com_website_{port}")
+            website.domain = self.DOMAIN
+            website.port = port
+            website.ssl = port == 443
+            locations = website.locations.get(f"bettertoken_com_locations_{port}")
 
-    def uninstall(self):
-        """
-        called when the package is no longer needed and will be removed from the threebot
-        :return:
-        """
-        pass
+            website_location = locations.get_location_static(f"bettertoken_com_{port}")
+            website_location.path_url = "/" if website.domain == self.DOMAIN else f"/{self.name}"
+            fullpath = j.sal.fs.joinPaths(self.package_root, "html/")
+            website_location.path_location = fullpath
+
+            locations.configure()
+            website.configure()
+            website.save()
