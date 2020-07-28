@@ -14,13 +14,13 @@ class Package(j.baseclasses.threebot_package):
         server.configure()
       
         for port in (80, 443):
-            website = server.websites.get(f"bettertoken_com_website_{port}")
+            website = server.websites.get(f"www2_bettertoken_com_website_{port}")
             website.domain = self.DOMAIN
             website.port = port
             website.ssl = port == 443
-            locations = website.locations.get(f"bettertoken_com_locations_{port}")
+            locations = website.locations.get(f"www2_bettertoken_com_locations_{port}")
 
-            website_location = locations.get_location_static(f"bettertoken_com_{port}")
+            website_location = locations.get_location_static(f"www2_bettertoken_com_{port}")
             website_location.path_url = "/" if website.domain == self.DOMAIN else f"/{self.name}"
             fullpath = j.sal.fs.joinPaths(self.package_root, "html/")
             website_location.path_location = fullpath
