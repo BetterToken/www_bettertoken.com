@@ -24,7 +24,7 @@ class Package(j.baseclasses.threebot_package):
             website_location.path_url = "/" if website.domain == self.DOMAIN else f"/{self.name}"
             fullpath = j.sal.fs.joinPaths(self.package_root, "html/")
             website_location.path_location = fullpath
-
+            website_location.force_https = True
             locations.configure()
             website.configure()
             website.save()
