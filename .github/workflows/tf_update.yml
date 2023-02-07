@@ -1,0 +1,21 @@
+name: bettertoken
+on: 
+  push:
+    branch: [ master ]
+
+jobs:
+  job_one:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: pushing latest change on www.bettertoken.com
+      uses: appleboy/ssh-action@master
+      with:
+        host: www.bettertoken.com
+        username: ${{ secrets.TF_USER }}
+        key: ${{ secrets.TF_SECRET }}
+        port: ${{ secrets.TF_PORT }}
+        script: |
+          cd ~/websites/www_bettertoken.com
+          git log -1
+          git pull
